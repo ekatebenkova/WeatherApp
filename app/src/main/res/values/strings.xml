@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FindWeatherApp</string>
+    <string name="enter_name_of_city">Введите название города</string>
+    <string name="search">Поиск</string>
+    <string name="temp">Температура</string>
+    <string name="pressure">Давление</string>
+    <string name="sunrise">Время восхода</string>
+    <string name="sunset">Время захода</string>
+    <string name="city">Город</string>
+</resources>
