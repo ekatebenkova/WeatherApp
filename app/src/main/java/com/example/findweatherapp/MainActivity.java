@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
         String PARAM_CITY = "q";
         String PARAM_APPID = "appid";
-        String appid_value = "your_api";
+        String appid_value = "your_appid";
 
         Uri buildUri = Uri.parse(BASE_URL).buildUpon().appendQueryParameter(PARAM_CITY,city)
                 .appendQueryParameter(PARAM_APPID, appid_value).build();
