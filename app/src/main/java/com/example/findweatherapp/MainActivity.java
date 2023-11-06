@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
         String PARAM_CITY = "q";
         String PARAM_APPID = "appid";
-        String appid_value = "f46b0e5cf4ac8cde7175171988eb4680";
+        String appid_value = "your_api";
 
         Uri buildUri = Uri.parse(BASE_URL).buildUpon().appendQueryParameter(PARAM_CITY,city)
                 .appendQueryParameter(PARAM_APPID, appid_value).build();
@@ -71,8 +71,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
-    public void proccessFinish(String output) {
-        Log.d(TAG, "proccessFinish: " + output);
+    public void processFinish(String output) {
+        Log.d(TAG, "processFinish: " + output);
 
         try {
             JSONObject resultJSON = new JSONObject(output);

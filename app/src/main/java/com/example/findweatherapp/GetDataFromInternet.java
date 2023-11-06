@@ -37,7 +37,7 @@ public class GetDataFromInternet extends AsyncTask <URL, Void, String> {
     }
 
     public interface AsyncResponse {
-        void proccessFinish(String output);
+        void processFinish(String output);
     }
 
     public AsyncResponse delegate;
@@ -69,7 +69,7 @@ public class GetDataFromInternet extends AsyncTask <URL, Void, String> {
     protected void onPostExecute(String result) {
         Log.d(TAG, "onPostExecute: called");
         Log.d(TAG, "onPostExecute: " + result);
-        delegate.proccessFinish(result);
+        delegate.processFinish(result);
         //super.onPostExecute(o);
     }
 }
